@@ -1,0 +1,36 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #00000;
+}
+
+
+header,footer{
+    text-align: center;
+}
+
+main{
+    max-width: 1041px;
+    margin: 50px auto; 
+}
+
+
+footer{
+    background-color: #005677;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+h1,h2{
+    color: #005677;
+    background-color: #C4C4C4;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 35px;
+}
+
+dt{
+    font-weight: 700;
+    width: fit-content; 
+}
