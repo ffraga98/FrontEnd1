@@ -6,7 +6,9 @@
 
 body{
     font-family: 'Roboto-Regular', sans-serif ;
+    color: #3C2313;
 }
+
 /* HEADER */
 header{
     color: white;
@@ -14,7 +16,53 @@ header{
 header section.seleccionador{
     background-color: black;
 }
+
+header section.seleccionador{
+    background-color: black;
+}
+
 header section.menu{
     background-color: #F0A83E;
 }
 
+header section.menu *{
+    padding-left: 20px
+}
+
+header section.menu nav{
+    ;
+}
+
+/* MAIN */
+main section#banner{
+    background-image: url(../img/Comida.png);
+    background-size: cover;
+    height: 408px;
+}
+
+main section#ProductosDestacados {
+    text-align: center;
+}
+
+main section#ProductosDestacados section.cabecera{
+    text-align: center;
+    padding-left: 20px;
+    line-height: 10px;
+}
+
+main section#ProductosDestacados i{
+    font-size: 60px;
+    color: #F0A83E;
+}
+
+main h2{
+    font-size: 40px
+}
+
+/* FOOTER */
+
+/* TODO(Fer): Alinear a la derecha los iconos del banner y del header */ 
+/* TODO(Fer): Ponerle color a los precios. */
+/* TODO(Fer): Ponerle estetica al footer. */
+/* TODO(Fer): Poner logo en el footer */
+/* TODO(Fer): Hacer banenr de suscripcion y el contactanos. (Dejar espacio para el formulario etc.) */
