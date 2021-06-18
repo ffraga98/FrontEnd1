@@ -1,0 +1,20 @@
+/* General */
+@font-face {
+    font-family: 'Roboto-Regular' ;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body{
+    font-family: 'Roboto-Regular', sans-serif ;
+}
+/* HEADER */
+header{
+    color: white;
+}
+header section.seleccionador{
+    background-color: black;
+}
+header section.menu{
+    background-color: #F0A83E;
+}
+
