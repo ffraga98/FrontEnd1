@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto-Regular', 'sans-serif';
+    font-size: 15px;
+}
+/* BODY */
+/* Div antes del header */
+div.descuentos{
+    background: #1CD1B0;
+    height: 38px;
+    padding-left: 10px;
+}
+/* Header */
+header{
+    background-color: #00669F;
+    position: sticky;
+    height: 101px;
+    top: 0px;
+    z-index: 10;
+}
+
+h1{
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+/* MAIN */
+main{
+    margin: 150px 30px ;
+
+}
+main article{
+    display: inline-block;
+    width: 300px;
+    margin: 30px;
+    background-color: #F3F3F3;
+}
+
+main article h3{
+    margin-top: 74px;
+    text-align: center;
+    font-size: 30px;
+}
+main article div{
+    position: relative;
+    height: 193px;
+    background-size: cover;
+}
+main article div i{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color:red;
+    font-size: 30px;
+}
+main article div.batman{
+    background-image: url(../img/fondo_BAT.png);
+}
+main article div.harley{
+    background-image: url(../img/fondo_HQ.png);
+}
+
+main article img.foto-perfil{
+    position: relative;
+    left: 90px;
+    top: 128px;
+}
+
+main article p{
+    padding: 17px;
+}
+
+main article p.descripcion{
+    height: 113px;
+    margin-bottom: 50px;
+}
+
+main article p.ver-mas{
+    background-color: #00669F;
+    text-align: center;
+    width: 128px;
+    margin: 20px;
+    position: relative;
+    left: 80px;
+}
+
+main article p.ver-mas a{
+        color: white;
+        text-decoration: none;
+}
+
+/* FOOTER */
+footer{
+    background-color: #00669F;
+    height: 51px;
+
+}
+footer p{
+    color: white;
+    margin: 16px;
+}
