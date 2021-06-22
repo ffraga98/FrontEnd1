@@ -10,7 +10,9 @@
     font-family: 'Roboto-Regular', 'sans-serif';
     font-size: 15px;
 }
+
 /* BODY */
+
 /* Div antes del header */
 div.descuentos{
     background: #1CD1B0;
@@ -68,6 +70,7 @@ main article div.harley{
 }
 
 main article img.foto-perfil{
+    border-radius: 50%;
     position: relative;
     left: 90px;
     top: 128px;
