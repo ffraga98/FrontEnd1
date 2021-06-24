@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Roboto - Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto - Regular', 'sans-serif';
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+h2{
+    color: red;
+    font-weight: bold;
+    margin: 25px;
+}
+
+/* Modifico todos los logos */
+div.logo div.pizza{
+    background-image: url(../img/VectorPizza.png);
+}
+div.logo div.titulo{
+    background-image: url(../img/Pizza&Front.png);
+    height: 25px;
+}
+
+header, footer{
+    background-color: #222222;
+    color: white;
+    display: flex;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 13px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+
+header ul,footer ul, div.logo{
+    margin: auto 20px ;
+}
+
+/* HEADER */
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div{
+    width:234px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN */
+
+main{
+    background-color: #E5E5E5;
+}
+
+main div.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+main div.cards > div{
+    background-color: white;
+    width: 490px;
+    height: 350px;
+}
+
+main div.cards div.promocion{
+    background-image: url(../img/delivery.png);
+}
+
+main div.podio-pizzas h2{
+    text-align: center;
+}
+
+main div.cards div.promocion h2 span{
+    color: white;
+}
+
+main div.cards div.podio-pizzas > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    margin: 60px auto;
+}
+
+main div.cards div.podio-pizzas div div.imagen-pizza{
+    background-image: url(../img/PizzaFalling.png);
+    background-size: contain;
+    width:92px;
+    height:130px;
+}
+
+main div.cards div.podio-pizzas div ol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div{
+    width:234px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer nav ul{
+    flex-direction: column;
+}
