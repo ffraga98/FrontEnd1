@@ -24,7 +24,7 @@ header{
     background-color: #00669F;
     position: sticky;
     height: 101px;
-    top: 0px;
+    top: 0px; /* SIEMPRE TENGO QUE DECIR EL TOPE PARA EL STICKY*/
     z-index: 10;
 }
 
@@ -35,7 +35,7 @@ h1{
 
 /* MAIN */
 main{
-    margin: 150px 30px ;
+    margin: 150px auto;
 
 }
 main article{
