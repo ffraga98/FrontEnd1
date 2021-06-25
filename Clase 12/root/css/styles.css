@@ -1,0 +1,401 @@
+/* General */
+@font-face {
+    font-family: 'Roboto-Regular' ;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* BODY */
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Roboto-Regular', sans-serif ;
+    color: #3C2313;
+    font-size: 15px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+div.top-banner{
+    background-color: black;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap:15px;
+    
+}
+div.top-banner *{
+    background-color: black;
+    color: white;
+    padding-right: 15px;
+    padding-left: 25px;
+} 
+div.top-banner div.opciones ul{
+    list-style-type: none;
+    text-align: right;
+    display: flex;
+}
+
+div.logo img{
+    width: 16px;
+    height: auto;
+}
+
+div.logo span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* HEADER */
+
+header{
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+    top: 0px;
+}
+
+header > *{
+    padding: 0px 40px
+}
+header div.logo span:nth-of-type(1){
+    color: black;
+}
+
+header div.logo span:nth-of-type(2){
+    color: white;
+}
+
+header div.menu nav ul{
+    display:flex;
+    justify-content: space-around;
+    gap: 15px
+}
+
+header div.menu nav ul li *{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+/* Todo lo perteneciente al div#main-banner */
+main div#main-banner{
+    background-image: url(../img/Comida.png);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    height: 408px;
+}
+
+main div#main-banner ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:12px;
+    list-style-type: none;
+    margin: 12px
+}
+main div#main-banner ul li{
+    text-align: center;
+}
+
+main div#main-banner ul li:nth-child(1){
+    background-color: white;
+    border-radius: 2.5px;
+    font-size: 30px;
+    padding: 5px;
+    width: 365px;
+}
+
+main div#main-banner ul li:nth-child(2){
+    font-size: 16px ;   
+}
+
+main div#main-banner ul li:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0A83E;
+    border-radius: 5px;
+    padding: 5px;
+    width: 141px;
+    height: 49px ;
+}
+main div#main-banner ul li:nth-child(3) a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Todo lo perteneciente al div#productos-destacados */
+main div#productos-destacados{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+main  h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+}
+main div#productos-destacados{
+    padding: 0px 0px 80px;
+}
+main div#productos-destacados div.cabecera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    line-height: 10px;
+}
+
+main div#productos-destacados div.cabecera div.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+main div#productos-destacados div.cabecera div.menu *{
+    text-decoration: none;
+    color: #666666;
+}
+    main div#productos-destacados div.cabecera i{
+    font-size: 60px;
+    color: #F0A83E;
+}
+
+main div#productos-destacados div.lista-productos{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main div#productos-destacados div.lista-productos ul{
+    font-size: 15px;
+    font-weight:bold;
+}
+
+
+main div#productos-destacados div.lista-productos span.producto{
+    background-color: #FBFAF6;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    justify-content: center;
+    padding: 7px;
+}
+
+main div#productos-destacados div.lista-productos span.producto li:nth-of-type(1) a{
+    color: #3C2313;
+    text-decoration: none;
+}
+
+main div#productos-destacados div.lista-productos span.producto li:nth-of-type(2){
+    font-size: 15px;
+    font-weight:bold;
+    color: #F0A83E;
+}
+
+main div#productos-destacados div.lista-productos span.producto:nth-last-of-type(1) div.imagen{
+    background-image: url(../img/churrasquito.png) ;
+    width:263px;
+    height: 267px;
+}
+
+main div#productos-destacados div.lista-productos span.producto:nth-last-of-type(2) div.imagen{
+    background-image: url(../img/comedero.png);
+    width:263px;
+    height: 267px;
+}
+
+main div#productos-destacados div.lista-productos span.producto:nth-last-of-type(3) div.imagen{
+    background-image: url(../img/Huesito.png) ;
+    width:263px;
+    height: 267px;
+}
+
+main div#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+main div#contacto h2{
+    font-size: 25px;
+}
+
+main div#contacto div.formulario ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white
+}
+main div#contacto li{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 5px;
+}
+main div#contacto div.formulario ul li{
+    width: 340px;
+    height: 40px;
+    font-size: 9px;
+    border-radius: 15px;
+    background-color: #3C2313;
+}
+main div#contacto div.botones ul{
+    margin: 10px 0px 60px 0px;
+    display: flex;
+    gap: 5px
+}
+
+main div#contacto div.botones li{
+    justify-content: center;
+    width: 110px;
+    height: 34px;
+    border-radius: 15px;
+    color: white;
+}
+
+main div#contacto div.botones li:nth-of-type(1){
+    background-color: #8A8787;
+}
+
+main div#contacto div.botones li:nth-of-type(2){
+    background-color: #F0A83E;
+}
+
+main div.suscripcion{
+    background-color: #F0A83E;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height:60px;
+    width:auto;
+}
+main div.suscripcion > div{
+    padding: 0px 47px;
+}
+main div.suscripcion div:nth-of-type(1){
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+main div.suscripcion i{
+    font-size: 30px;
+}
+
+main div.suscripcion span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div.suscripcion ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.suscripcion div:nth-of-type(2) ul li{
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+}
+
+div.suscripcion div:nth-of-type(2) ul li:nth-of-type(1){
+    background-color: white;
+    padding-left: 10px;
+    width: 271px;
+    height: 40px;
+    color: #A0A0A0;
+}
+
+div.suscripcion div:nth-of-type(2) ul li:nth-of-type(2){
+    justify-content: center;
+    background-color: #3C2313;
+    width: 70px;
+    height: 34px;
+    font-size: 10px;
+}
+/* FOOTER */
+
+footer{
+    background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+footer div.sociales > ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 20px;
+}
+footer div.sociales i{
+    font-size: 60px;
+    width: 66px;
+}
+footer div.sociales ul li{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 10px;
+    padding-left: 15px;
+}
+
+footer div.sociales ul li ul li:nth-of-type(1){
+    font-size: 20px;
+}
+
+footer div.sociales ul li ul li:nth-of-type(2){
+    font-size: 10px;
+    color: #8A8787;
+}
+
+footer div.logo span:nth-of-type(1){
+    color: white;
+}
+footer div.logo span:nth-of-type(2){
+    color:#F0A83E;
+}
+
+div.derechos{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 20px;
+    text-align: center;
+}
+
+/* TODO: Depurar el css. Factorizar todo lo que pueda. Haciendo más general las reglas. */
