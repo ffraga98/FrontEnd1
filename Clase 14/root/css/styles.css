@@ -164,32 +164,34 @@ footer span{
     display: flex;
     justify-content: center;
 }
+
 footer img{
     height: 2rem;
 }
 
 
+@media (max-width: 768px) {
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    section#heroe-cards div.card div.background-img i{
+        font-size: 2.5rem;
+    }
+
+    footer img{
+        height: 1.5rem
+    }
+}
+
 @media (max-width: 481px) {
     section#heroe-cards div.card:nth-last-of-type(1){
         display: none;
     }
+
     footer img{
         height: 1rem
     }
 }
 
-@media (max-width: 480px) {
-    header{
-        display: flex;
-        justify-content: center;
-    }
-    section#heroe-cards div.card:nth-last-of-type(1){
-        display: none;
-    }
-    section#heroe-cards div.card div.background-img i{
-        font-size: 3rem;
-    }
-    footer img{
-        height: 1rem
-    }
-}
