@@ -412,7 +412,7 @@ div.derechos{
     text-align: center;
 }
 
-@media (max-width: 480px){
+@media (max-width: 550px){
     div.top-banner, header  div.menu nav ul{
         display: none
     }
@@ -425,7 +425,7 @@ div.derechos{
         font-family: "Font Awesome 5 Free";
         color: white; 
         content: "\f0c9";
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
     div#contacto h2{
