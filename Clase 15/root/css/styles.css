@@ -97,7 +97,8 @@ main{
 h2{
     font-size: 40px;
     font-weight: bold;
-    margin: 10px;
+    margin: 10px 40px;
+    line-height: 2.5rem;
 }
 
 /* Todo lo perteneciente al div#main-banner */
@@ -118,6 +119,7 @@ div#main-banner ul{
     list-style-type: none;
     margin: 12px
 }
+
 div#main-banner ul li{
     text-align: center;
 }
@@ -127,6 +129,7 @@ div#main-banner ul li:nth-child(1){
     border-radius: 2.5px;
     font-size: 30px;
     padding: 5px;
+    margin: 0px 15px;
     width: 365px;
 }
 
@@ -256,7 +259,7 @@ div#contacto div.formulario ul{
     color: white
 }
 
-div#contacto li{
+div#contacto div.formulario li{
     display: flex;
     align-items: center;
     color: white;
@@ -279,8 +282,7 @@ div#contacto div.botones ul{
 
 div#contacto div.botones li{
     justify-content: center;
-    width: 110px;
-    height: 34px;
+    padding: 8px 26px;
     border-radius: 15px;
     color: white;
 }
@@ -299,12 +301,12 @@ div.suscripcion{
     justify-content: space-between;
     align-items: center;
     color: white;
-    height:60px;
+    padding: 10px 0px;
     width:auto;
 }
 
 div.suscripcion > div{
-    padding: 0px 47px;
+    margin: 5px 0px;
 }
 
 div.suscripcion div:nth-of-type(1){
@@ -346,8 +348,7 @@ div.suscripcion div:nth-of-type(2) ul li:nth-of-type(1){
 div.suscripcion div:nth-of-type(2) ul li:nth-of-type(2){
     justify-content: center;
     background-color: #3C2313;
-    width: 70px;
-    height: 34px;
+    padding:8px;
     font-size: 10px;
 }
 /* FOOTER */
@@ -360,6 +361,10 @@ footer{
     color: white;
     font-weight: bold;
     padding: 20px;
+}
+
+footer div.logo{
+    margin: 0px 10px 20px;
 }
 
 footer div.logo span:nth-of-type(1){
@@ -407,4 +412,36 @@ div.derechos{
     text-align: center;
 }
 
-/* TODO: Depurar el css. Factorizar todo lo que pueda. Haciendo más general las reglas. */
+@media (max-width: 480px){
+    div.top-banner, header  div.menu nav ul{
+        display: none
+    }
+
+    div.suscripcion div:nth-of-type(2) ul li:nth-of-type(2){
+        font-size: 1rem;
+    }
+    
+    header  div.menu nav::before{
+        font-family: "Font Awesome 5 Free";
+        color: white; 
+        content: "\f0c9";
+        font-size: 3rem;
+    }
+
+    div#contacto h2{
+        font-size: 2rem;
+    }
+    
+    div.suscripcion {    
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer{
+        display:flex;
+        flex-direction: column;
+    }
+
+    footer div.logo{
+        order: -1
+    }
+}
