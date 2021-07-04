@@ -18,7 +18,7 @@ body{
 div.top-banner{
     display: flex;
     align-items: center;
-    background-color: #D1891C;
+    background-color: #00669F;
     height: 38px;
     padding-left: 10px;
     font-weight: bold;
@@ -171,6 +171,11 @@ footer img{
 
 
 @media (max-width: 768px) {
+    
+    div.top-banner{
+    background-color: #D1891C;
+    }
+    
     header{
         display: flex;
         justify-content: center;
