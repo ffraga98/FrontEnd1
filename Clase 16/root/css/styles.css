@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Roboto - Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Karla - Regular';
+    src: url(../fonts/Karla-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter - Regular';
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto - Regular', sans-serif;
+}
+
+header, footer{
+    background-color: #00669F;
+}
+/* Top Banner */
+.top-banner{
+    background-color: #1CD1B0;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+/* Header */
+header{
+    align-items: center;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+div.logo{
+    background-image: url(../img/logo\ 1.svg);
+    width: 99px;
+    height: 74px;
+}
+
+h1{
+    color: white;
+}
+
+/* main */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    margin: 126px;
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    border-style: none;
+}
+
+form legend{
+    position: relative;
+    font-size: 4.5rem;
+    margin:20px;
+    font-family: 'Inter-Regular', sans-serif;
+    font-weight: bold;
+}
+form fieldset div.botones{
+    display: flex;
+    justify-content: center;
+}
+
+input,select{
+    margin: 10px 0px;
+    font-size: 1.25rem;
+    height: 60px;
+}
+
+input::placeholder{
+    color: black;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+input[type='reset'], input[type='submit']{
+    border-radius: 30px;
+    border-style: none;
+    padding: 0px 130px;
+    margin: 35px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Karla-Regular', sans-serif;
+}
+
+input[type='reset']{
+    background-color: #888888;
+    color: white
+}
+
+input[type='submit']{
+    background-color: #1CD1B0;
+}
+
+form fieldset a{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+form fieldset a{
+    text-decoration: none;
+    color: black;
+}
+
+form fieldset a span{
+    color:royalblue;
+}
+
+
+/* footer */
+footer{
+    text-align: center;
+    padding: 21px;
+}
+footer span{
+    color: white;
+}
