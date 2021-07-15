@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles_addh.css">
+    <title>Añadir</title>
+</head>
+
+<body>
+    <div class="top-banner">
+        <span>20% de descuento en todos los productos! </span>
+    </div>
+    <header>
+        <div class="menu">
+            <div class="logo">
+            
+            </div>
+        <h1>Nombre Tienda</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="contacto.html"> Contacto </a></li>
+                <li><a href="registro.html"> Registrarme </a></li>
+                <li><a href="login.html"> Ingresar </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="GET" action="index.html">
+            <fieldset>
+                <legend> Añadí tu super! </legend>
+                <span> Agregá favorito completando las opciones.</span>
+                
+                <div class="campos">
+                    <div >
+                        <label for="name">Nombre</label>
+                        <br>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div >
+                        <label for="especie">Especie</label>
+                        <br>
+                        <input type="select" name="especie" id="especie" placeholder="Especie">
+                    </div>
+                </div>
+                
+                <div class="campos">
+                    <div>
+                        <label for="fecha">Fecha</label>
+                        <br>
+                        <input type="date" name="fecha" id="fecha">
+                    </div>
+                    <div>
+                        <label for="photo">Agregar Foto</label>
+                        <br>
+                        <input type="file" name="photo" id="photo">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="description"></label>
+                    <textarea id="description" placeholder="Descripción" rows=20></textarea>
+
+                    <div class=opciones>
+                        <options id="powers">
+                            <label for="powers">Poderes</label>
+                            <br>
+                            <input type="checkbox" name="volar" id="volar">
+                            <label for="volar">Volar</label> 
+                            <br>
+                            <input type="checkbox" name="superinteligencia" id="superinteligencia">
+                            <label for="superinteligencia">SuperInteligencia</label>
+                            <br>
+                            <input type="checkbox" name="laser" id="laser">
+                            <label for="laser">Vista de rayo láser</label>
+                            <br>
+                            <input type="checkbox" name="billetera" id="billetera">
+                            <label for="billetera">Billetera gorda</label>
+                        </options>
+
+                        <hr>
+
+                        <options id="personaje">
+                            <label for="personaje">Tipo de Personaje</label>
+                            <br>
+                            <input type="radio" id="heroe">
+                            <label for="heroe">Héroe / Heroina</label>
+                            <br>
+                            <input type="radio" id="villano">
+                            <label for="villano"> Villano / Villana </label>
+                        </options>
+                    </div>
+                </div>
+
+                <div class="botones">
+                    <input type="submit" value="Añadir">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <span>Todos los derechos reservados a FRONT END 1 </span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'Roboto - Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+/* General */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: 'Roboto - Regular', 'sans-serif';
+    font-size: 1rem;
+}
+
+
+a{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Banner Superior */
+div.top-banner{
+    display: flex;
+    align-items: center;
+    background-color: #1CD1B0;
+    height: 38px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00669F;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+h1{
+    color: white;
+    font-size: 3rem;
+    height: 80px;
+}
+
+div.menu{
+    background-color: #012336;
+    height: 40px;
+}
+
+div.menu nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+
+/* MAIN */
+
+.boton{
+    align-items: center;
+    color: white;
+    background-color: #00669F;
+    border-radius: 50%;
+    display: flex;
+    font-size: 2rem;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+    position: fixed;
+    top: 50vh;
+    right: 20px;
+    z-index: 10;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 62px 0px 0px 0px ;
+}
+
+section#heroe-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section#heroe-cards div.card{
+    align-items: center;
+    border-radius: 20px;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 25px;
+    position: relative;
+}
+
+section#heroe-cards div.card div.background-img{
+    width: 300px;
+    height: 193px;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+section#heroe-cards div.card div.background-img i{
+    color: red;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 2rem;
+}
+
+
+section#heroe-cards div.card:nth-of-type(1) div.background-img{
+    background-image: url(../img/background-batman.png);
+}
+section#heroe-cards div.card:nth-of-type(2) div.background-img{
+    background-image: url(../img/background-wonder.png);
+}
+section#heroe-cards div.card:nth-of-type(3) div.background-img{
+    background-image: url(../img/background-superman.png);
+}
+section#heroe-cards div.card:nth-of-type(4) div.background-img{
+    background-image: url(../img/background-harley.png);
+}
+
+section#heroe-cards div.card div.profile-img{
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 125px
+}
+
+section#heroe-cards div.card:nth-of-type(1) div.profile-img{
+    background-image: url(../img/batman-profile.png);
+}
+section#heroe-cards div.card:nth-of-type(2) div.profile-img{
+    background-image: url(../img/wonder-profile.png);
+}
+section#heroe-cards div.card:nth-of-type(3) div.profile-img{
+    background-image: url(../img/superman-profile.png);
+}
+section#heroe-cards div.card:nth-of-type(4) div.profile-img{
+    background-image: url(../img/harley-profile.png);
+}
+
+section#heroe-cards div.card p{
+    color: #333333;
+    margin: 14px;
+}
+section#heroe-cards div.card span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #00669F;
+    color: white;
+    width: 128px;
+    height: 52px;
+    margin: 20px;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #00669F;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    height: 70px;
+}
+footer span{
+    display: flex;
+    justify-content: center;
+}
+
+footer img{
+    height: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    
+    div.top-banner{
+    background-color: #D1891C;
+    }
+    
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    section#heroe-cards div.card div.background-img i{
+        font-size: 2.5rem;
+    }
+
+    footer img{
+        height: 1.5rem
+    }
+}
+
+@media (max-width: 481px) {
+    section#heroe-cards div.card:nth-last-of-type(1){
+        display: none;
+    }
+
+    footer img{
+        height: 1rem
+    }
+}
+
