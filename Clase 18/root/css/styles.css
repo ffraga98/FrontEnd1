@@ -1,0 +1,474 @@
+/* General */
+@font-face {
+    font-family: 'Roboto-Regular' ;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* BODY */
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Roboto-Regular', sans-serif ;
+    color: #3C2313;
+    font-size: 15px;
+}
+
+div.top-banner{
+    background-color: black;
+    color: white;
+    display: flex;
+    gap:15px;
+    height: 20px;
+    justify-content: space-between;
+}
+
+div.top-banner *{
+    padding-right: 15px;
+    padding-left: 25px;
+} 
+
+div.top-banner div.opciones ul{
+    text-align: right;
+    display: flex;
+}
+
+
+/* HEADER */
+
+header{
+    align-items: center;
+    background-color: #F0A83E;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+
+header > *{
+    padding: 0px 40px
+}
+
+header div.logo img{
+    width: 16px;
+}
+
+header div.logo span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header div.logo span:nth-of-type(1){
+    color: black;
+}
+
+header div.logo span:nth-of-type(2){
+    color: white;
+}
+
+div.menu nav ul{
+    display:flex;
+    justify-content: space-around;
+    gap: 15px
+}
+
+div.menu nav ul li *{
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+h2, legend{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+h2{
+    margin: 10px 40px;
+}
+
+/* Todo lo perteneciente al div#main-banner */
+div#main-banner{
+    background-image: url(../img/Comida.png);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    height: 408px;
+}
+
+div#main-banner ul{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    justify-content: center;
+    list-style-type: none;
+    margin: 12px
+}
+
+div#main-banner ul li{
+    text-align: center;
+}
+
+div#main-banner ul li:nth-child(1){
+    background-color: white;
+    border-radius: 2.5px;
+    font-size: 30px;
+    padding: 5px;
+    margin: 0px 15px;
+    width: 365px;
+}
+
+div#main-banner ul li:nth-child(2){
+    font-size: 16px ;   
+}
+
+div#main-banner ul li:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0A83E;
+    border-radius: 5px;
+    padding: 5px;
+    width: 141px;
+    height: 49px ;
+}
+
+div#main-banner ul li:nth-child(3) a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Todo lo perteneciente al div#productos-destacados */
+div#productos-destacados{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 0px 0px 80px;
+}
+
+div#productos-destacados div.cabecera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    line-height: 10px;
+}
+
+div#productos-destacados div.cabecera div.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+div#productos-destacados div.cabecera div.menu *{
+    text-decoration: none;
+    color: #666666;
+}
+
+div#productos-destacados div.cabecera::before{
+    content:'\f1b0';
+    font-family: "Font Awesome 5 Free";
+    font-size: 60px;
+    margin: 20px 0px 0px;
+    color: #F0A83E;
+}
+
+div#productos-destacados div.lista-productos{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+div#productos-destacados div.lista-productos ul{
+    font-size: 15px;
+    font-weight:bold;
+}
+
+div#productos-destacados div.lista-productos span.producto{
+    background-color: #FBFAF6;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    justify-content: center;
+    padding: 7px;
+}
+
+div#productos-destacados div.lista-productos span.producto li:nth-of-type(1) a{
+    color: #3C2313;
+    text-decoration: none;
+}
+
+div#productos-destacados div.lista-productos span.producto li:nth-of-type(2){
+    font-size: 15px;
+    font-weight:bold;
+    color: #F0A83E;
+}
+
+div#productos-destacados div.lista-productos span.producto:nth-last-of-type(1) div.imagen{
+    background-image: url(../img/churrasquito.png) ;
+    width:263px;
+    height: 267px;
+}
+
+div#productos-destacados div.lista-productos span.producto:nth-last-of-type(2) div.imagen{
+    background-image: url(../img/comedero.png);
+    width:263px;
+    height: 267px;
+}
+
+div#productos-destacados div.lista-productos span.producto:nth-last-of-type(3) div.imagen{
+    background-image: url(../img/Huesito.png) ;
+    width:263px;
+    height: 267px;
+}
+
+form#contacto{
+    display: flex;
+    justify-content: center;
+
+}
+form#contacto fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    gap:10px;
+    width:45%
+}
+
+form#contacto fieldset legend{
+    font-size: 25px;
+    text-align: center;
+}
+
+form#contacto fieldset div{
+    width: 100%;
+    margin: 10px;
+}
+
+form#contacto fieldset div:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+form#contacto fieldset div:nth-of-type(1) input{
+    width: 90%;
+    height: 40px;
+    font-size: 0.6rem;
+    border-radius: 15px;
+    background-color: #3C2313;
+    border-style: none;
+}
+
+form#contacto fieldset div:nth-of-type(1) input::placeholder{
+    color: white;
+    padding-left: 5px;
+}
+
+form#contacto fieldset div:nth-last-of-type(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    height: 40px;
+}
+form#contacto fieldset div:nth-last-of-type(1) input{
+    width: 25%;
+    height: 90%;
+
+    border-style: none;
+    border-radius: 15px;
+
+    color: white;
+}
+form#contacto fieldset div:nth-last-of-type(1) input[type=submit]{
+    background-color: #F0A83E;
+}
+form#contacto fieldset div:nth-last-of-type(1) input[type=reset]{
+    background-color: #8A8787;
+}
+
+form#suscripcion{
+    background-color: #F0A83E;
+padding: 20px 0px;
+}
+
+form#suscripcion fieldset{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-style: none;
+    padding: 5px 10px;
+}
+
+form#suscripcion fieldset legend{
+    display: none;
+}
+form#suscripcion fieldset span{
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+form#suscripcion fieldset span::before{
+    content: '\f0e0';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 1.5rem;
+    margin: 0px 10px;
+}
+
+form#suscripcion fieldset div{
+    width: 45%;
+}
+
+form#suscripcion fieldset div input{
+    font-size: 0.8rem;
+    border-style: none;
+    border-radius: 20px;
+    height: 35px;
+}
+form#suscripcion fieldset div input[type=email]{
+    background-color: white;
+    width: 65%
+}
+
+form#suscripcion fieldset div input[type=email]::placeholder{
+    color: #A0A0A0;
+    padding: 5px;
+}
+form#suscripcion fieldset div input[type=submit]{
+    background-color: #3C2313;
+    color: white;
+    width:30%
+
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+footer div.logo{
+    margin: 0px 10px 20px;
+}
+
+footer div.logo span:nth-of-type(1){
+    color: white;
+}
+
+footer div.logo span:nth-of-type(2){
+    color:#F0A83E;
+}
+
+div.sociales > ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 20px;
+}
+
+div.sociales i{
+    font-size: 60px;
+    width: 66px;
+}
+
+div.sociales ul li{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 10px;
+    padding-left: 15px;
+}
+
+div.sociales ul li ul li:nth-of-type(1){
+    font-size: 20px;
+}
+
+div.sociales ul li ul li:nth-of-type(2){
+    font-size: 10px;
+    color: #8A8787;
+}
+
+div.derechos{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 20px;
+    text-align: center;
+}
+
+@media (max-width: 700px){
+    div.top-banner, header  div.menu nav ul{
+        display: none
+    }
+
+    div.suscripcion div:nth-of-type(2) ul li:nth-of-type(2){
+        font-size: 1rem;
+    }
+    
+    header  div.menu nav::before{
+        font-family: "Font Awesome 5 Free";
+        color: white; 
+        content: "\f0c9";
+        font-size: 1.5rem;
+    }
+
+    form#contacto fieldset{
+        font-size: 2rem;
+    }
+
+    form#contacto fieldset{
+        width: 75%;
+    }
+    
+    form#suscripcion fieldset div{
+        width: 90%;
+    }
+
+    form#suscripcion fieldset{    
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer{
+        display:flex;
+        flex-direction: column;
+    }
+
+    footer div.logo{
+        order: -1
+    }
+}
